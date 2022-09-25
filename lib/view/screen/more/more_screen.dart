@@ -154,7 +154,7 @@ class _MoreScreenState extends State<MoreScreen> {
 
 
                                   Provider.of<SplashProvider>(context,listen: false).configModel.loyaltyPointStatus ==1?
-                                  SquareButton(image: Images.loyalty_point, title: "Pearls",
+                                  SquareButton(image: Images.loyalty_point, title: "loyalty points",
                                     navigateTo: LoyaltyPointScreen(),count: 1,hasCount: false,):SizedBox(),
 
 
@@ -221,10 +221,10 @@ class _MoreScreenState extends State<MoreScreen> {
                       navigateTo: HtmlViewScreen(title: getTranslated('about_us', context),
                         url: Provider.of<SplashProvider>(context, listen: false).configModel.aboutUs,)),
 
-                  TitleButton(image: Images.contact_us, title: getTranslated('contact_us', context),
-                      navigateTo: WebViewScreen(title: getTranslated('contact_us', context),
-                        url: Provider.of<SplashProvider>(context, listen: false).configModel.staticUrls.contactUs,
-                  )),
+                  // TitleButton(image: Images.contact_us, title: getTranslated('contact_us', context),
+                  //     navigateTo: WebViewScreen(title: getTranslated('contact_us', context),
+                  //       url: Provider.of<SplashProvider>(context, listen: false).configModel.staticUrls.contactUs,
+                  // )),
 
                   // ListTile(
                   //   leading: Image.asset(Images.logo_image, width: 25, height: 25, fit: BoxFit.fill,

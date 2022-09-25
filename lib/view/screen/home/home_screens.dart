@@ -116,6 +116,7 @@ class _HomePageState extends State<HomePage> {
                 slivers: [
                   // App Bar
                   SliverAppBar(
+                    foregroundColor: Colors.white,
                     floating: true,
                     elevation: 0,
                     centerTitle: false,
@@ -123,9 +124,13 @@ class _HomePageState extends State<HomePage> {
                     backgroundColor: Colors.white60,
                     title: Row(
                       children: [
-                        Image.asset(Images.logo_with_name_image, height: 38),
+                        Container(
+
+
+                            child: Image.asset(Images.logo_with_name_image, height: 50)
+                        ),
                         SizedBox(width: 10,),
-                        Text("Shopemon",style: TextStyle(fontSize: 22,color: Colors.deepPurple.shade500,fontWeight: FontWeight.w900),)
+                        // Text("Shopemon",style: TextStyle(fontSize: 22,color: Colors.deepPurple.shade500,fontWeight: FontWeight.w900),)
                       ],
                     ),
                     actions: [
@@ -376,8 +381,8 @@ class _HomePageState extends State<HomePage> {
 
 
                           //Home category
-                          HomeCategoryProductView(isHomePage: true),
-                          SizedBox(height: Dimensions.HOME_PAGE_PADDING),
+                          // HomeCategoryProductView(isHomePage: true),
+                          // SizedBox(height: Dimensions.HOME_PAGE_PADDING),
 
 
 

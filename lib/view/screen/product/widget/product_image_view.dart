@@ -13,6 +13,8 @@ import 'package:flutter_sixvalley_ecommerce/view/screen/product/widget/favourite
 import 'package:provider/provider.dart';
 import 'package:share/share.dart';
 
+import '../product_image_screen.dart';
+
 class ProductImageView extends StatelessWidget {
   final Product productModel;
   ProductImageView({@required this.productModel});
@@ -25,7 +27,7 @@ class ProductImageView extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       children: [
         InkWell(
-          // onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (_) => ProductImageScreen(imageList: productModel.images, title: productModel.name))),
+          onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (_) => ProductImageScreen(imageList: productModel.images, title: productModel.name))),
           child: productModel.images !=null ?
           Container(
             decoration: BoxDecoration(

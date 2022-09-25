@@ -38,7 +38,7 @@ class _LoyaltyPointScreenState extends State<LoyaltyPointScreen> {
       backgroundColor: ColorResources.getIconBg(context),
       body: Column(
         children: [
-          CustomAppBar(title: 'Perls',
+          CustomAppBar(title: 'loylty points',
           // getTranslated('loyalty_point', context),
               isBackButtonExist: true),
           isGuestMode ? SizedBox() :

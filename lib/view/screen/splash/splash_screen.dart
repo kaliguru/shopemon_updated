@@ -89,23 +89,24 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      // backgroundColor: Colors.white,
       key: _globalKey,
       body: Provider.of<SplashProvider>(context).hasConnection ? Stack(
         clipBehavior: Clip.none, children: [
           Container(
             width: MediaQuery.of(context).size.width,
             height: MediaQuery.of(context).size.height,
-            color: Provider.of<ThemeProvider>(context).darkTheme ? Colors.black : ColorResources.getPrimary(context),
-            child: CustomPaint(
-              painter: SplashPainter(),
-            ),
+            color: Colors.white,
+            // child: CustomPaint(
+            //   painter: SplashPainter(),
+            // ),
           ),
           Center(
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                Image.asset('assets/images/more_logo.png', height: 250.0, fit: BoxFit.scaleDown,
-                  width: 250.0,),
+                Image.asset('assets/images/New_Logo.png', height: 300, fit: BoxFit.scaleDown,
+                  width: 300,),
               ],
             ),
           ),

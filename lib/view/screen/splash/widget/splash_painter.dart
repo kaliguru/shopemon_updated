@@ -5,7 +5,7 @@ class SplashPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     var paint = Paint()
-      ..color = ColorResources.LIGHT_SKY_BLUE.withOpacity(0.3)
+      ..color = ColorResources.WHITE
       ..style = PaintingStyle.fill
       ..strokeWidth = 2.0;
     var path = Path();

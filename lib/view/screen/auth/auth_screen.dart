@@ -23,14 +23,16 @@ class AuthScreen extends StatelessWidget{
     PageController _pageController = PageController(initialPage: initialPage);
 
     return Scaffold(
+      backgroundColor: Colors.white,
       body: Stack(
         clipBehavior: Clip.none,
         children: [
 
-          Provider.of<ThemeProvider>(context).darkTheme ? SizedBox() 
-              : Image.asset(Images.background, fit: BoxFit.fill,
-              height: MediaQuery.of(context).size.height,
-              width: MediaQuery.of(context).size.width),
+          Provider.of<ThemeProvider>(context).darkTheme ? SizedBox()
+              :
+          // Image.asset("",
+              // height: MediaQuery.of(context).size.height,
+              // width: MediaQuery.of(context).size.width),
 
           Consumer<AuthProvider>(
             builder: (context, auth, child) => SafeArea(
